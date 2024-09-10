@@ -65,7 +65,7 @@ auth.set_access_token(settings.TWITTER_KEY, settings.TWITTER_SECRET)
 api = tweepy.API(auth)
 #no_of_tweets = 200
 
-stream_listener = StreamingClient('AAAAAAAAAAAAAAAAAAAAABrvvgEAAAAA4srHjiI52CDTdsrFw9HWOW2eK20%3DyA3KN1xt84TWE865gPAQlzSUzHTzDKDQ5vqx17vcHUJGRbYsyr')
+stream_listener = StreamingClient('ENTER_TOKEN_BEARER')
 track_terms = " OR ".join(settings.TRACK_TERMS)
 stream_listener.add_rules(tweepy.StreamRule(value=track_terms))
 stream_listener.filter(track=settings.TRACK_TERMS)
